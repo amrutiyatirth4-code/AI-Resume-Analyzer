@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATS Scanner</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="glass-card">
+
+    <h1>ATS Scanner</h1>
+
+    <input type="file">
+
+    <button>Analyze Resume</button>
+
+    <br><br>
+
+    <a href="/">
+        <button>Back Home</button>
+    </a>
+
+</div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
